@@ -66,9 +66,9 @@ class AppointmentController{
          * Check if provider_id is equal req.userId
          */
 
-        // if(provider_id == req.userId){
-        //     return res.status(401).json({error: 'You cannot make an appointment with yourself'})
-        // }
+        if(provider_id == req.userId){
+            return res.status(401).json({error: 'You cannot make an appointment with yourself'})
+        }
 
         /**
          * Check for past dates
