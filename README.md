@@ -54,3 +54,5 @@ $ sequelize db:migrate
 $ yarn dev
 
 ```
+
+With the postgres data (host, port, name, password) connect to Postbird and create a database with the name gobarber
